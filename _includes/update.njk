@@ -1,0 +1,30 @@
+---
+layout: default.njk
+---
+<main class="mw9 center ph4 ph7-l">
+  <section class="bb b--black">
+    <img src="/img/tome.png" alt="The primary logo for Tometo, its mascot Tome" width="30" class="v-mid"/> 
+    <p class="ph1 georgia f4 dib v-mid">
+      <span class="b">Tometo</span> Updatelog
+      <a href="/" class="link blue ml2">Back to index</a>
+    </p>
+  </section>
+
+  <h1 class="f2 f1-ns georgia">{{ title }} <small class="f5 db fw4">{{ page.date.toDateString() }}</small></h1>
+
+  <section class="lh-copy f4 mb4">
+    <style>
+      a {
+        color: #357edd;
+        text-decoration: none;
+      }
+    </style>
+    {{ content | safe }}
+
+    {%- for member in team -%}
+      {%- if member.name == author -%}
+        <div class="gray f5">Written by <img src="https://twitter-avatar.now.sh/{{ member.twitter }}" alt="{{ member.name }}'s Twitter avatar" class="h1 v-mid"/> {{ member.name }}.</div>
+      {%- endif -%}
+    {%- endfor -%}
+  </section>
+</main>

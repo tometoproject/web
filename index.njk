@@ -1,0 +1,104 @@
+---
+title: Index
+layout: content.njk
+description: A text-to-speech social network, currently in development.
+---
+
+<a name="top"></a>
+<div class="w-100 bg-light-blue dark-gray f5 pa3 mb3 bt b--blue bw1" style="border-top-style: dashed;">
+  {% set fupdate = collections.update | first %}
+  Check out our latest update post:
+  <a href="{{ fupdate.url }}" class="b link navy">{{ fupdate.data.title }}</a>
+</div>
+
+<h1 class="f2 f1-m f-subheadline-l lh-title mv0 georgia dt">
+  <a href="/mascot"><img class="dtc v-mid mt2" width="150" alt="The primary logo for Tometo, its mascot Tome" src="/img/tome.png"/></a>
+  <div class="dtc v-mid pl4">
+    Tometo
+    <small class="db f3 fw4">pronounced <i>To-mii-to</i></small>
+  </div>
+</h1>
+
+<p class="measure lh-copy f4">
+  is a social network based upon text-to-speech functionality. Created as a
+  homage to Nintendo's <span class="i">Miitomo</span> mobile game, it's currently
+  in development as an independent project from a couple of developers.
+</p>
+
+<section class="mv2">
+  <a name="about"></a><h2 class="f3 f2-ns lh-title georgia">What <span class="i">is</span> it?</h2>
+  <p class="measure lh-copy f4">
+    It's a website that you can open on your browser or your phone. Unlike Twitter
+    or other social networks, you create a "character" that will speak your status updates
+    using text-to-speech technology! You can adjust the pitch and tone of your character's
+    voice, and eventually, the site will be host to a lot of different other things
+    you can do with your character as well!
+  </p>
+</section>
+
+<section class="mv2">
+  <a name="usage"></a><h2 class="f3 f2-ns lh-title georgia">Cool, how do I use it?</h2>
+  <p class="measure lh-copy f4">
+    Tometo is currently in <strong>active development</strong>! At this point
+    there's no public beta or alpha, although we will certainly update this website
+    once we get to that point. We also can't give any timeframe on when we'll get to
+    that milestone. However, it is developed as source-available software,
+    the source is available <a href="https://marisa.cloud/tometo/tometo" class="link blue">here</a>.
+  </p>
+</section>
+
+<section class="mv2">
+  <a name="updates"></a><h2 class="f3 f2-ns lh-title georgia">Do you post updates anywhere?</h2>
+  <p class="measure lh-copy f4">
+    Yes! This website houses an update log:
+  </p>
+    <ul>
+    {%- if collections.update | length < 5 -%}
+      {%- for update in collections.update -%}
+        <li class="f4">
+          <a class="link blue" href="{{ update.url }}">
+            {{ update.data.title }}
+          </a>
+          <small>{{ update.date.toDateString() }}</small>
+        </li>
+      {%- endfor -%}
+    {%- else -%}
+      {%- for i in range(0, 4) -%}
+        {% set update = collections.update[i] %}
+        <li>{{ update.title }}</li>
+      {%- endfor -%}
+    {%- endif -%}
+    </ul>
+  <p class="measure lh-copy f4">
+    Alternatively, you can follow us on <a href="https://twitter.com/tometo_official" class="link blue">Twitter</a>
+    or chat with us on <a href="https://discord.gg/xqTEcaw" class="link blue">Discord</a>.
+  </p>
+</section>
+
+<section class="mv2">
+  <a name="team"></a><h2 class="f3 f2-ns lh-title georgia">Who makes this?</h2>
+  <p class="measure lh-copy f4">
+    These people!
+  </p>
+
+  <ul class="list measure pl0 mt0">
+  {%- for member in team -%}
+    {%- if member.twitter -%}
+      <a href="https://twitter.com/{{ member.twitter }}" class="link dim"><li class="flex items-center lh-copy pa3 ph0-l">
+        <img class="w2 h2 w3-ns h3-ns" alt="The Twitter avatar of {{ member.name }}" src="https://twitter-avatar.now.sh/{{ member.twitter }}">
+        <div class="pl3 flex-auto">
+          <span class="f5 db black-70">{{ member.name }}</span>
+          <span class="f5 db black-70">@{{ member.twitter }}</span>
+        </div>
+      </li></a>
+    {%- else -%}
+      <li class="flex items-center lh-copy pa3 ph0-l">
+        <img class="w2 h2 w3-ns h3-ns" alt="The avatar of {{ member.name }}" src="/img/team/{{ member.name }}.png">
+        <div class="pl3 flex-auto">
+          <span class="f5 db black-70">{{ member.name }}</span>
+        </div>
+      </li>
+    {%- endif -%}
+  {%- endfor -%}
+  </div>
+</section>

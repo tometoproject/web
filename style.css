@@ -1,0 +1,23 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.noto-sans {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-row-gap: 20px;
+  grid-column-gap: 30px;
+  justify-items: center;
+  justify-content: start;
+}
+
+@media screen and (max-width: 40em) {
+  .grid {
+    grid-template-columns: auto;
+    justify-items: start;
+  }
+}

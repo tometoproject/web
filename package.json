@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --serve",
+    "deploy": "npm run build && ntl deploy --prod -d _site/"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.8.3"
+  },
+  "devDependencies": {
+    "netlify-cli": "^2.11.23"
+  }
+}
