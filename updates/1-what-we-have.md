@@ -1,7 +1,7 @@
 ---
 tags: update
 title: What we have and where we're going
-date: 2019-06-29
+date: 2019-07-17
 layout: update.njk
 author: marisa
 description: Our plans for the first release of Tometo, amid our public launch.
