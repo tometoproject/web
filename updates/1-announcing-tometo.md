@@ -9,7 +9,7 @@ description: Our plans for the first release of Tometo, amid our public launch.
 
 Welcome, and thanks for the interest in our project! We're pretty excited to finally show this to the public. Before I go on, I just want to outline the motivation behind creating this project. Many of us (and many of you) actively used Nintendo's [Miitomo](https://en.wikipedia.org/wiki/Miitomo) app. In its essence, it was a social network which allowed you to communicate by using Nintendo's own Mii characters, using a question-and-answer format. There was something unique about the game that set it apart from other social networks — personally, I think it was mixing the non-human-like text-to-speech voices with the Mii avatars, but maybe it was just due to the Mii's general design that made them seem uncanny.
 
-Since Miitomo shut down in mid-2018, the only real alternative has been reverse engineering the server code and setting up third-party servers for the app. I originally started this project because I wanted to see whether it was possibly to capture the unique experience that Miitomo offered, and on the way, got others to tag along.
+Since Miitomo shut down in mid-2018, the only real alternative has been reverse engineering the server code and setting up third-party servers for the app. I originally started this project because I wanted to see whether it was possible to capture the unique experience that Miitomo offered in the format of a website, and on the way, got others to tag along.
 
 That being said, Tometo is by no means done, nor is it even in a state where we can put it online in some sort of beta phase, but we have a fairly straightforward plan on what needs to happen for us to get there.
 
