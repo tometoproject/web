@@ -6,7 +6,7 @@ description: A text-to-speech social network, currently in development.
 
 <a name="top"></a>
 <div class="w-100 bg-light-blue dark-gray f5 pa3 mb3 bt b--blue bw1" style="border-top-style: dashed;">
-  {% set fupdate = collections.update | first %}
+  {% set fupdate = collections.update | reverse | first %}
   Check out our latest update post:
   <a href="{{ fupdate.url }}" class="b link navy">{{ fupdate.data.title }}</a>
 </div>
@@ -54,12 +54,12 @@ description: A text-to-speech social network, currently in development.
   </p>
     <ul>
     {%- if collections.update | length < 5 -%}
-      {%- for update in collections.update -%}
-        <li class="f4">
+      {%- for update in collections.update | reverse -%}
+        <li class="f3 mb3">
           <a class="link blue" href="{{ update.url }}">
             {{ update.data.title }}
           </a>
-          <small>{{ update.date.toDateString() }}</small>
+          <small class="f5 i gray">{{ update.date.toDateString() }}</small>
         </li>
       {%- endfor -%}
     {%- else -%}
