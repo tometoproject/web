@@ -3,7 +3,8 @@
   "scripts": {
     "build": "eleventy",
     "watch": "eleventy --serve",
-    "deploy": "npm run build && ntl deploy --prod -d _site/"
+    "deploy": "npm run build && ntl deploy --prod -d _site/",
+    "deploy:stage": "npm run build && ntl deploy -d _site/"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.8.3"
