@@ -51,5 +51,22 @@
       the source for this website is available <a href="https://marisa.cloud/tometo/web" class="link blue">here</a>
     </div>
   </section>
+
+  <!-- very small website tracking snippet -->
+  <script>
+    (function() {
+		    if (window.location.hostname.indexOf('localhost') > -1) {
+			      return
+		    }
+
+		    var script = document.createElement('script')
+		    window.counter = 'https://mokou.goatcounter.com/count'
+		    script.async = 1
+		    script.src = '//static.goatcounter.com/count.min.js'
+
+		    var ins = document.getElementsByTagName('script')[0]
+		    ins.parentNode.insertBefore(script, ins)
+	  })();
+</script>
 </body>
 </html>
