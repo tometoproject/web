@@ -8,9 +8,7 @@ app with Nunjucks templates.
 Clone the sources:
 
 ```sh
-git clone https://marisa.cloud/tometo/web.git
-# or
-git clone git@marisa.cloud:tometo/web.git
+hg clone https://callie.marisa.cloud/tometo/web
 ```
 
 Install the dependencies:

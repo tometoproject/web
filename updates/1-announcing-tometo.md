@@ -31,7 +31,7 @@ I also presented the proof of concept at a local [Rust](https://rust-lang.org) m
 
 ## What's the plan?
 
-We have a milestone for what we want to be in our __initial release__ (basically the first time we version the software) that can be tracked [here](https://marisa.cloud/tometo/issues/issues?milestone_title=first-version). Chief among this is implementing an Avatar system, sort of like what you would have as Miis in Miitomo. The rudimentary system for this is to let the user upload two images, one for when the mouth is closed and one for when it's opened, but we'll expand on this after the first release (we'll also probably write more updates on this). Specifically, we would like more input on how to design this feature and what people would like to get out of it, so if you have any ideas, suggest them!
+We have a milestone for what we want to be in our __initial release__ (basically the first time we version the software) that can be tracked [here](https://bugs.marisa.cloud/versions/1). Chief among this is implementing an Avatar system, sort of like what you would have as Miis in Miitomo. The rudimentary system for this is to let the user upload two images, one for when the mouth is closed and one for when it's opened, but we'll expand on this after the first release (we'll also probably write more updates on this). Specifically, we would like more input on how to design this feature and what people would like to get out of it, so if you have any ideas, suggest them!
 
 Ideally, the first release is when we'll also have a live version for you all to try, but no guarantees on that yet. We'll update you when we get closer to that point!
 
