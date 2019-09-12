@@ -1,4 +1,4 @@
-# tometo.mokou.zone
+# tometo.org
 
 Source files for the Tometo website. We're running an [Eleventy](https://11ty.io)
 app with Nunjucks templates.
