@@ -19,7 +19,7 @@ first version of said interface. This is what it looks like right now:
   />
   
 While it doesn't currently look very visually appealing, it provides with all of
-the available ways to customize your Avatar. Keep in mind that this is an MVP,
+the available ways to customize your Avatar. Keep in mind that this is an MVP _(minimum viable product)_,
 aka the simplest possible way you could represent an Avatar. As soon as we get a
 minimal, but fully-featured version of Tometo completed, we'll start working on
 making this system a more complex representation of what an Avatar could look
