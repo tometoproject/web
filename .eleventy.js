@@ -1,9 +1,13 @@
-module.exports = {
-  templateFormats: [
-    "njk",
-    "md",
-    "css",
-    "png"
-  ],
-  passthroughFileCopy: true
+module.exports = function (cfg) {
+  cfg.addPassthroughCopy('admin')
+  cfg.addPassthroughCopy('img')
+
+  return {
+    templateFormats: [
+      "njk",
+      "md",
+      "css",
+      "png"
+    ]
+  }
 };
