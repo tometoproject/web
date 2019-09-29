@@ -2,6 +2,7 @@
 tags: update
 title: Creating Avatars and other lifestyle improvements
 date: 2019-09-20
+number: 3
 layout: update.njk
 author: marisa
 description: Here's what we've been working on over the past month!

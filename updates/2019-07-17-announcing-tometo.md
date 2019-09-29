@@ -2,6 +2,7 @@
 tags: update
 title: Announcing Tometo!
 date: 2019-07-17
+number: 1
 layout: update.njk
 author: marisa
 description: Our plans for the first release of Tometo, amid our public launch.

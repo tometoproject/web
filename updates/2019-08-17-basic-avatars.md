@@ -2,6 +2,7 @@
 tags: update
 title: Avatar support and more!
 date: 2019-08-17
+number: 2
 layout: update.njk
 author: marisa
 description: We've implemented basic avatar support, here's what's next.
