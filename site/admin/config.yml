@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: master
+publish_mode: editorial_workflow
+media_folder: "img/uploads"
+collections:
+  - name: "updates"
+    label: "Updates"
+    folder: "updates"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Tags", name: "tags", widget: "list", default: ["update"]}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "update.njk"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Text", name: "body", widget: "markdown"}
