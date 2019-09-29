@@ -3,9 +3,14 @@ backend:
   branch: master
 publish_mode: editorial_workflow
 media_folder: "img/uploads"
+logo_url: https://tometo.org/img/tome.png
+display_url: https://tometo.org
 collections:
   - name: "updates"
     label: "Updates"
+    label_singular: "Update"
+    description: "News posts"
+    preview_path: "updates/{{number}}-{{slug}}"
     folder: "updates"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
