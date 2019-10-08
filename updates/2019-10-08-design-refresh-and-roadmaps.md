@@ -11,11 +11,11 @@ It's been a while, right? As always, we have some interesting stuff to show you 
 
 So what do you do when your current framework is bothering you? Completely abolish it and write your own CSS, of course! That's exactly what we did. The [pull request](https://marie.marisa.cloud/t/tometo/pulls/3) for this was one of the largest ones so far, and here's what the finished product looks like:
 
-![](/img/uploads/sc1.png)
+<center>![](/img/uploads/sc1.png)</center>
 
-![](/img/uploads/sc2.png)
+<center>![](/img/uploads/sc2.png)</center>
 
-![](/img/uploads/sc3.png)
+<center>![](/img/uploads/sc3.png)</center>
 
 Very simple styling, admittedly, but we don't see much value in having something complex and elaborate, since it's always a nightmare to maintain in the future. If you see any irregularities in these screenshots, please tell us on [Discord](https://discord.gg/xqTEcaw)!
 
