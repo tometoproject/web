@@ -33,7 +33,7 @@ Very simple styling, admittedly, but we don't see much value in having something
 
 ## An Update on the Roadmap
 
-In our first update post, we said that we couldn't guarantee any timeframe for when we would make a first/initial release. Well, as the time of this writing, I've pretty much locked down the final set of features that are going to make it into version **0.1.0**. This means I've had to deprioritize some other features, but the priority for us is that we make an initial release that's stable enough to be deployed into a staging environment.
+In our first update post, we said that we didn't have a timeframe for an initial release. Well, at the time of this writing, I've pretty much locked down the final set of features that are going to make it into version **0.1.0**. This means I've had to deprioritize some other features, but the priority for us is that we make an initial release that's stable enough to be deployed into a staging environment.
 
 _Note that this doesn't necessarily mean that we'll be putting up a live version of Tometo when this comes out, it's mostly for us to have stable ground to implement further features on._
 
